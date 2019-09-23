@@ -1,9 +1,8 @@
-const jsonData = {
-  id: 42,
-  status: 'OK',
-  data: [123, 456]
+function example() {
+  return [1, 2, 3]
 }
 
-const { id, status, data } = jsonData
+let [x, y, z] = example()
 
-console.log(id, status, data)
+
+console.log(x, y, z)

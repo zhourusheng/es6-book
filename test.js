@@ -1,8 +1,10 @@
-function example() {
-  return [1, 2, 3]
-}
+let promise = new Promise((resolve, reject) => {
+  console.log('Promise')
+  resolve()
+})
 
-let [x, y, z] = example()
+promise.then(() => {
+  console.log('resolved')
+})
 
-
-console.log(x, y, z)
+console.log('hI')

@@ -1,12 +1,12 @@
 # Promise
 
-## Promise 的含义
+## 1. Promise 的含义
 
 Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。它由社区最早提出和实现，ES6 将其写进了语言标准，统一了用法，原生提供了Promise对象。
 
 所谓Promise，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise 是一个对象，从它可以获取异步操作的消息。Promise 提供统一的 API，各种异步操作都可以用同样的方法进行处理。
 
-## Promise 基本用法
+## 1.1 Promise 基本用法
 
 ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。
 
@@ -62,39 +62,39 @@ console.log('Hi!');
 上面代码中，Promise 新建后立即执行，所以首先输出的是Promise。然后，then方法指定的回调函数，将在当前脚本所有同步任务执行完才会执行，所以resolved最后输出。
 
 
-## Promise.prototype.then()
+## 2. Promise.prototype.then()
 
 Promise 实例具有then方法，也就是说，then方法是定义在原型对象Promise.prototype上的。它的作用是为 Promise 实例添加状态改变时的回调函数。前面说过，then方法的第一个参数是resolved状态的回调函数，第二个参数（可选）是rejected状态的回调函数。
 
 then方法返回的是一个新的Promise实例（注意，不是原来那个Promise实例）。因此可以采用链式写法，即then方法后面再调用另一个then方法。
 
 
-## Promise.prototype.catch()
+## 3. Promise.prototype.catch()
 
 
-## Promise.prototype.finally()
+## 4. Promise.prototype.finally()
 
 finally方法用于指定不管 Promise 对象最后状态如何，都会执行的操作。该方法是 ES2018 引入标准的。
 
-## Promise.all()
+## 5. Promise.all()
 
 
-## Promise.race()
+## 6. Promise.race()
 
 
-## Promise.resolve()
+## 7. Promise.resolve()
 
 
-## Promise.reject()
+## 8. Promise.reject()
 
 
-## 应用
+## 9. Promise的应用
 
 
-## Promise.try()
+## 10. Promise.try()
 
 
-## JS 异步编程四种方案
+## 11. JS异步编程四种方案
 
 **（1）回调函数**
 

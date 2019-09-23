@@ -1,10 +1,5 @@
-let promise = new Promise((resolve, reject) => {
-  console.log('Promise')
-  resolve()
-})
+function foo(x = 5) {
+  let x = 1
+}
 
-promise.then(() => {
-  console.log('resolved')
-})
-
-console.log('hI')
+foo()

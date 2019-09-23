@@ -1,18 +1,18 @@
 # 字符串的新增方法
 
-## String.fromCodePoint()
+## 1. String.fromCodePoint()
 
 
-## String.raw()
+## 2. String.raw()
 
 
-## 实例方法：codePointAt()
+## 3. 实例方法：codePointAt()
 
 
-## 实例方法：normalize()
+## 4. 实例方法：normalize()
 
 
-## 实例方法：includes(), startsWith(), endsWith()
+## 5. 实例方法：includes(), startsWith(), endsWith()
 
 传统上，JavaScript 只有 `indexOf` 方法，可以用来确定一个字符串是否包含在另一个字符串中。ES6 又提供了三种新方法。
 
@@ -24,23 +24,23 @@
 
 ```
 
-## 实例方法：repeat()
+## 6. 实例方法：repeat()
 
 `repeat` 方法返回一个新字符串，表示将原字符串重复n次。
 
 
 
-## 实例方法：padStart(), padEnd()
+## 7. 实例方法：padStart(), padEnd()
 
 ES2017 引入了字符串补全长度的功能。如果某个字符串不够指定长度，会在头部或尾部补全。padStart()用于头部补全，padEnd()用于尾部补全。
 
 
 
-## 实例方法：trimStart(), trimEnd()
+## 8. 实例方法：trimStart(), trimEnd()
 
 
 ES2019 对字符串实例新增了 `trimStart()` 和 `trimEnd()` 这两个方法。它们的行为与 `trim()` 一致，`trimStart()` 消除字符串头部的空格，`trimEnd()` 消除尾部的空格。它们返回的都是新字符串，不会修改原始字符串。
 
-## 实例方法：matchAll()
+## 9. 实例方法：matchAll()
 
 `matchAll()` 方法返回一个正则表达式在当前字符串的所有匹配，详见《正则的扩展》的一章
